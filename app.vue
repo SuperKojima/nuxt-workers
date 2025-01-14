@@ -11,14 +11,16 @@ const { data, status, refresh } = await useFetch('/api');
 
     <!-- status, data -->
     <table border="1">
-      <tr>
-        <td>status</td>
-        <td>{{ status }}</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td><pre>{{ data }}</pre></td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>status</td>
+          <td>{{ status }}</td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td><pre>{{ data }}</pre></td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </template>
